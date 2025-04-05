@@ -1,24 +1,31 @@
 console.log("script loaded!! so sigma!!")
 
-//base vars
+//base variables
+const canvas = document.createElement("canvas")
+canvas.id = "canvas1"
+document.body.appendChild(canvas)
+const ctx = canvas.getContext('2d');
+canvas.width = window.innerWidth;
+canvas.height = window.innerHeight;
+let popcornParticlesArray = [];
 
+//game variables
 let milk = 0;
 let targetId = 0;
 let addition = 0;
 let multiplier = 1;
 
 //shop stuffs
-
 const shopContainer = document.getElementById("shopContainer");
 
 //template: [name, description, icon, id, cost]
 let strawberryArray = ["strawberry milk", "+1 milk per click", "strawberryIcon", "strawberry", 30];
 let chocolateArray = ["chocolate milk", "+5 milk per click", "chocolateIcon", "chocolate", 105];
+let vampiresArray = ["vampire", "sucks milk out of the carton for you (+1 milk per second)", "vampIcon", "vampire", 105];
 
 let shopButtons = [strawberryArray, chocolateArray]
 
 //functions
-
 function createShopButton(name, description, icon, id, cost)
 {
     //setup variables

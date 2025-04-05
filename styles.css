@@ -3,6 +3,14 @@ body
     background-color: #FFFFFF;
 }
 
+#title
+{
+    position: absolute;
+    top: 5%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
 /* milk stuffs */
 
 .milkContainer
@@ -18,17 +26,24 @@ body
     
 }
 
+.milkImage
+{
+    transition-duration: 0.12s;
+}
+
 .milkImage:hover
 {
     opacity: 0.85;
     transform: scale(1.02);
     cursor: pointer;
+    transition-duration: 0.12;
 }
 
 .milkImage:active
 {
     opacity: 0.75;
     transform: scale(0.98)
+    
 }
 
 /* shop stuffs */
@@ -76,6 +91,9 @@ body
     margin: 12px;
     font-family: cursive;
     text-align: center;
+    transition-duration: 0.1s;
+    image-rendering: pixelated;
+    
     
 }
 
@@ -84,10 +102,23 @@ body
     opacity: 0.85;
     transform: scale(1.02);
     cursor: pointer;
+    transition-duration: 0.1s;
 }
 
 .shopButton:active
 {
     opacity: 0.75;
     transform: scale(0.98)
+    
+}
+
+/* canvas */
+
+#canvas1
+{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
 }
