@@ -14,11 +14,8 @@ const shopContainer = document.getElementById("shopContainer");
 //template: [name, description, icon, id, cost]
 let strawberryArray = ["strawberry milk", "+1 milk per click", "strawberryIcon", "strawberry", 30];
 let chocolateArray = ["chocolate milk", "+5 milk per click", "chocolateIcon", "chocolate", 105];
-let coolArray1 = ["chocolate milk", "+5 milk per click", "chocolateIcon", "chocolate", 105];
-let coolArray2 = ["chocolate milk", "+5 milk per click", "chocolateIcon", "chocolate", 105];
-let coolArray3 = ["chocolate milk", "+5 milk per click", "chocolateIcon", "chocolate", 105];
 
-let shopButtons = [strawberryArray, chocolateArray, coolArray1, coolArray2, coolArray3]
+let shopButtons = [strawberryArray, chocolateArray]
 
 //functions
 
