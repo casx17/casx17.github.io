@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+    <head>
+        <title> milk drinking </title>
+        <link rel="icon" type="image/x-icon" href="images/icons/milkIcon.png">
+
+        <link rel="stylesheet" href="styles.css">
+        <script src="scripts/main.js"></script>
+
+    </head>
+
+    <body>
+
+        <h1 style="text-align: center; font-size: 60px; font-family: cursive; color: #7777ff">
+            milk drinking
+        </h1>
+
+        <div class="milkContainer">
+            <p id="milk#" style="text-align: center; font-size: 40px; font-family: cursive;">
+                error
+            </p>    
+
+            <img src="images/milk.png" width="200" height="250" onclick="clickMilk()" class="milkImage" draggable="false">
+
+        </div>
+
+        <div class = "shopSection">
+            <p style="font-family: cursive; color: #7777ff; font-size: 45px;"> shop </p>
+            <div class="shopContainer" id="shopContainer">
+
+            </div>
+        </div>
+
+        <script>updateNumber(0)</script>
+        <script>createShopButtons()</script>
+
+    </body>
+
+</html>

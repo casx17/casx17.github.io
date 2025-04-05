@@ -1,0 +1,93 @@
+body
+{
+    background-color: #FFFFFF;
+}
+
+/* milk stuffs */
+
+.milkContainer
+{
+
+    position: absolute;
+    top: 25%;
+    transform: translateY(-50%);
+    left: 35%;
+    transform: translateX(-50%);
+
+    image-rendering: pixelated
+    
+}
+
+.milkImage:hover
+{
+    opacity: 0.85;
+    transform: scale(1.02);
+    cursor: pointer;
+}
+
+.milkImage:active
+{
+    opacity: 0.75;
+    transform: scale(0.98)
+}
+
+/* shop stuffs */
+
+.shopSection
+{
+
+    position: absolute;
+    top: 25%;
+    transform: translateY(-50%);
+    left: 65%;
+    transform: translateX(-50%);
+    display: block;
+    text-align: center;
+    align-items: center;
+    padding: 30px;
+
+}
+
+.shopContainer
+{
+
+    display: block;
+    text-align: center;
+    align-items: center;
+    overflow-y: auto;
+    padding: 0px;
+    max-height: 300px;
+
+}
+
+/* shop buttons */
+
+.shopButton
+{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #FFFFFF;
+    border-radius: 25px;
+    border: 5px solid #7777FF;
+    padding: 18px; 
+    width: 225px;
+    height: 60px;
+    margin: 12px;
+    font-family: cursive;
+    text-align: center;
+    
+}
+
+.shopButton:hover
+{
+    opacity: 0.85;
+    transform: scale(1.02);
+    cursor: pointer;
+}
+
+.shopButton:active
+{
+    opacity: 0.75;
+    transform: scale(0.98)
+}
