@@ -59,6 +59,13 @@ function createShopButton(name, description, icon, id, cost)
                 costText.innerHTML = "$" + cost
                 addition += 1
             }
+
+            if (button.id == "chocolate")
+            {
+                cost = Math.round(cost ** 1.15)
+                costText.innerHTML = "$" + cost
+                addition += 5
+            }
         }
     })
 
