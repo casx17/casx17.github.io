@@ -91,7 +91,7 @@ function createShopButtons()
 function updateNumber(number)
 {
     milk += number;
-    document.getElementById("milk#").innerHTML = 'milk: ' + milk
+    document.getElementById("milknum").innerHTML = 'milk: ' + milk
 }
 
 function clickMilk()

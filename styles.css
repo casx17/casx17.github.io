@@ -26,6 +26,11 @@ body
     
 }
 
+.milknum
+{
+    font-size: 45px;
+}
+
 .milkImage
 {
     transition-duration: 0.12s;
